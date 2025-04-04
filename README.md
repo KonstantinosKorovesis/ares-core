@@ -34,4 +34,18 @@ java -jar target/ares-core-1.0.0.jar
 
 - **JUnit** - Tests the Application Controller and Repository
 - **GitHub Action** - main.yml CI Workflow that runs Unit, Code Quality and Integration Tests on Code Push and Pull Requests
-- **Main Branch Protection** - Only merge changes into the main branch after passing all checks
+- **Main Branch Protection** - Only merge changes into the main branch after status check for the build workflow job is passed 
+
+## Phase 3 - Build Automation
+
+### Running AresCore using pre-built Image from Docker Hub
+
+1. Pull the pre-built Image:
+```sh
+docker pull konstantinoskorovesis/ares-core:latest
+```
+2. Run the Container
+```sh
+docker run -p 8080:8080 konstantinoskorovesis/ares-core:latest
+```
+3. Access the application at http://localhost:8080/resources
