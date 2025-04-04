@@ -30,3 +30,8 @@ java -jar target/ares-core-1.0.0.jar
 ```
 4. Access the application at http://localhost:8080/resources
 
+## Phase 2 - Unit Tests + CI Workflow
+
+- **JUnit** - Tests the Application Controller and Repository
+- **GitHub Action** - main.yml CI Workflow that runs Unit, Code Quality and Integration Tests on Code Push and Pull Requests
+- **Main Branch Protection** - Only merge changes into the main branch after passing all checks
