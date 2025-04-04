@@ -1,4 +1,4 @@
-package gr.aueb.dmst;
+package com.spacex.marsops.arescore;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

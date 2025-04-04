@@ -6,17 +6,16 @@
   <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.3</version>
-		<relativePath />
+		<version>3.4.4</version>
 	</parent>
 
-  <groupId>gr.aueb.dmst</groupId>
-  <artifactId>seip-assignment1</artifactId>
-  <version>0.0.1</version>
-  <name>seip-assignment1</name>
-  <description>A simple CRUD app</description>
+  <groupId>com.spacex.marsops</groupId>
+  <artifactId>ares-core</artifactId>
+  <version>1.0.0</version>
+  <name>AresCore</name>
+  <description>A Martian CRUD Application for SpaceX MarsOps.</description>
 
-  <url>https://github.com/KonstantinosKorovesis/seip-assignment1</url>
+  <url>https://github.com/KonstantinosKorovesis/ares-core</url>
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -55,7 +54,7 @@
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-security</artifactId>
+      <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
 
 		<dependency>
@@ -164,7 +163,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<configLocation>${project.basedir}/config/sun_checks.xml</configLocation>
+					<configLocation>${project.basedir}/config/checkstyle.xml</configLocation>
 					<encoding>UTF-8</encoding>
 					<consoleOutput>true</consoleOutput>
 					<failsOnError>true</failsOnError>
