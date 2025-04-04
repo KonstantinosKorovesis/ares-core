@@ -30,7 +30,7 @@ public class AresCoreController {
     @GetMapping
     public String showResources(Model model) {
         model.addAttribute("resources", aresCoreRepository.findAll());
-        return "resources"; 
+        return "resource-list";
     }
 
     /**
